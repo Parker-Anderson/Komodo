@@ -10,6 +10,12 @@ namespace Komodo_ConsoleUI
 {
     public class ProgramUI
     {
+       private DevTeamRepo _devTeamRepo = new DevTeamRepo();
+        
+
+        private DevRepo _devRepo = new DevRepo();
+
+
         public void Run()
         {
 
@@ -19,6 +25,7 @@ namespace Komodo_ConsoleUI
 
         private void Menu()
         {
+            
             bool keepRunning = true;
             while (keepRunning)
             {
@@ -95,21 +102,23 @@ namespace Komodo_ConsoleUI
         }
         private void ViewDevList()
         {
-            //List<Developer> developers = _devList.GetDevList();
+            List<Developer> developers = _devRepo.GetDevList();
             
             
 
         }
 
-        private void ViewTeamList()
+        private List<DevTeam> ViewTeamList()
         {
-            //List<DevTeam> listofTeams = _devTeams.GetTeamList();
+            List<DevTeam> listofTeams = _devTeamRepo.GetTeamList();
+            return listofTeams;
+            
 
         }
 
         private void NeedPSList()
         {
-            //List<Developer> needPSList = _devList.NeedsPSList();
+            _devRepo.NeedPluralList(true);
             
 
         }
@@ -146,8 +155,33 @@ namespace Komodo_ConsoleUI
 
         private void RemoveDev()
         {
-            //RemoveDevFromList
+            //_devTeamRepo.RemoveDevFromTeam();
 
+        }
+
+        private void SeedDevList()
+        {
+            Developer john = new Developer("John", 1, true);
+            Developer bob = new Developer("Bob", 2, false);
+            Developer jane = new Developer("Jane", 3, false);
+
+
+            _devRepo.AddDeveloper(john);
+            _devRepo.AddDeveloper(bob);
+            _devRepo.AddDeveloper(jane);
+
+        }
+
+        private void SeedTeamList()
+        {
+            List<Developer> developers = new List<Developer>();
+            List<Developer> developers_2 = new List<Developer>();
+            DevTeam team1 = new DevTeam(developers, "Red Team", 1);
+            DevTeam team2 = new DevTeam(developers_2, "Blue Team", 2);
+
+
+            _devTeamRepo.CreateNewTeam(team1);
+            _devTeamRepo.CreateNewTeam(team2);
         }
     }
 

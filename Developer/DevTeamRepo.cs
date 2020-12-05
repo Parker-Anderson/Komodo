@@ -8,7 +8,7 @@ namespace Komodo_Repo
 {
     public class DevTeamRepo
     {
-         public List<DevTeam> _devTeams = new List<DevTeam>();
+         private List<DevTeam> _devTeams = new List<DevTeam>();
         
 
         public void CreateNewTeam(DevTeam newteam)

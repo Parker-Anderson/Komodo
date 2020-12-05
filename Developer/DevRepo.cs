@@ -12,14 +12,14 @@ namespace Komodo_Repo
         
 
     {
-        public List<Developer> _devList = new List<Developer>();
+        private List<Developer> _devList = new List<Developer>();
 
         
 
 
 
 
-        public List<Developer> DevList { get; set; }
+        
         
         public void AddDeveloper(Developer newdev)
         {
