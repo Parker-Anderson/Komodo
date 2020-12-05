@@ -171,7 +171,16 @@ namespace Komodo_ConsoleUI
 
         private void RemoveDev()
         {
-            //_devTeamRepo.RemoveDevFromTeam();
+            Console.WriteLine("Team ID number:");
+            string idstring = Console.ReadLine();
+            int teamid = int.Parse(idstring);
+            Console.WriteLine("Developer to Remove (ID number):");
+            string devidstring = Console.ReadLine();
+            int devid = int.Parse(devidstring);
+            _devTeamRepo.GetTeambyID(teamid);
+            Developer deletedev = _devRepo.GetDevbyID(devid);
+            
+            _devTeamRepo.RemoveDevFromTeam(teamid, deletedev);
 
         }
 
