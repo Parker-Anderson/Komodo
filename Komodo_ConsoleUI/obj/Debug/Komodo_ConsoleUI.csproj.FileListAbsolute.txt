@@ -1,0 +1,10 @@
+C:\Users\parke\source\repos\KomodoProject\Komodo_ConsoleUI\bin\Debug\Komodo_ConsoleUI.exe.config
+C:\Users\parke\source\repos\KomodoProject\Komodo_ConsoleUI\bin\Debug\Komodo_ConsoleUI.exe
+C:\Users\parke\source\repos\KomodoProject\Komodo_ConsoleUI\bin\Debug\Komodo_ConsoleUI.pdb
+C:\Users\parke\source\repos\KomodoProject\Komodo_ConsoleUI\obj\Debug\Komodo_ConsoleUI.csprojAssemblyReference.cache
+C:\Users\parke\source\repos\KomodoProject\Komodo_ConsoleUI\obj\Debug\Komodo_ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\parke\source\repos\KomodoProject\Komodo_ConsoleUI\obj\Debug\Komodo_ConsoleUI.exe
+C:\Users\parke\source\repos\KomodoProject\Komodo_ConsoleUI\obj\Debug\Komodo_ConsoleUI.pdb
+C:\Users\parke\source\repos\KomodoProject\Komodo_ConsoleUI\bin\Debug\Developer.dll
+C:\Users\parke\source\repos\KomodoProject\Komodo_ConsoleUI\bin\Debug\Developer.pdb
+C:\Users\parke\source\repos\KomodoProject\Komodo_ConsoleUI\obj\Debug\Komodo_ConsoleUI.csproj.CopyComplete

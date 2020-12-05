@@ -1,0 +1,6 @@
+C:\Users\parke\source\repos\KomodoProject\Developer\bin\Debug\Developer.dll
+C:\Users\parke\source\repos\KomodoProject\Developer\bin\Debug\Developer.pdb
+C:\Users\parke\source\repos\KomodoProject\Developer\obj\Debug\Komodo_Repo.csproj.CoreCompileInputs.cache
+C:\Users\parke\source\repos\KomodoProject\Developer\obj\Debug\Developer.dll
+C:\Users\parke\source\repos\KomodoProject\Developer\obj\Debug\Developer.pdb
+C:\Users\parke\source\repos\KomodoProject\Developer\obj\Debug\Komodo_Repo.csprojAssemblyReference.cache
