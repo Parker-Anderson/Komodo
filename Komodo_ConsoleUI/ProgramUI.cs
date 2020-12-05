@@ -25,6 +25,8 @@ namespace Komodo_ConsoleUI
 
         private void Menu()
         {
+            SeedTeamList();
+            SeedDevList();
             
             bool keepRunning = true;
             while (keepRunning)
@@ -103,16 +105,30 @@ namespace Komodo_ConsoleUI
         private void ViewDevList()
         {
             List<Developer> developers = _devRepo.GetDevList();
+
+            foreach (Developer developer in developers)
+            {
+                Console.Clear();
+                Console.WriteLine($"Name: {developer.DevName}\n" +
+                    $"ID Number: {developer.DevID}\n" +
+                    $"Access to PluralSight? {developer.AccessToPluralsight}");
+            }
             
             
 
         }
 
-        private List<DevTeam> ViewTeamList()
+        private void ViewTeamList()
         {
             List<DevTeam> listofTeams = _devTeamRepo.GetTeamList();
-            return listofTeams;
             
+            foreach (DevTeam team in listofTeams)
+            {
+                Console.Clear();
+                Console.WriteLine($"Team Name: {team.TeamName}\n" +
+                    $"Team ID: {team.TeamID}\n" +
+                    $"Team Members: {team.TeamMembers}");
+            }
 
         }
 
