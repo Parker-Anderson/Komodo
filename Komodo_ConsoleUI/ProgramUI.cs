@@ -132,9 +132,24 @@ namespace Komodo_ConsoleUI
 
         }
 
-        private void NeedPSList()
+        private bool NeedPSList()
         {
-            _devRepo.NeedPluralList(true);
+            List<Developer> developers = new List<Developer>();
+            Console.Clear();
+            foreach (Developer developer in developers)
+            {
+                if (developer.AccessToPluralsight == false)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            return false;
+            
+            
             
 
         }
@@ -165,6 +180,9 @@ namespace Komodo_ConsoleUI
             string devidstring = Console.ReadLine();
             int devid = int.Parse(devidstring);
             newDev.DevID = devid;
+            Console.WriteLine("Does the Developer have access to PluralSight? y/n:");
+            string devps = Console.ReadLine();
+            newDev.DevPS = devps;
 
 
         }
